@@ -78,12 +78,7 @@ router.post("/", async (request, response) => {
 
       response.status(200).json({
         id: 1,
-        result: {
-          message: "Welcome to the JSON-RPC API.",
-          method: rpcMethod,
-          params: rpcParams,
-          result: resultList,
-        },
+        result: resultList,
         jsonrpc: "2.0",
       });
     }
